@@ -1,9 +1,14 @@
 <script>
 	let name='Harshit';
 	let age = 30;
-
+	// let upperCaseName not required
+	$: upperCaseName = name.toUpperCase();
 	function incrementAge(){
-		age+=1
+		age+=1;
+	}
+
+	function changeName(){
+		name = 'Shibu';
 	}
 
 </script>
@@ -13,6 +18,7 @@
 		color: purple;
 	}
 </style>
-
-<h1>Hello {name} aged {age}!</h1>
+<!-- markup -->
+<h1>Hello {upperCaseName} aged {age}!</h1>
 <button on:click="{incrementAge}">Increase Age</button>
+<button on:click={changeName}>Change Name</button>
