@@ -3,6 +3,10 @@
 	let age = 30;
 	// let upperCaseName not required
 	$: upperCaseName = name.toUpperCase();
+	$: console.log(age)
+	$: if (name == 'Shibu'){
+		age = 27;
+	}
 	function incrementAge(){
 		age+=1;
 	}
