@@ -1,4 +1,5 @@
 <script>
+	import ContactCard from "./ContactCard.svelte";
 	let name='Harshit';
 	let age = 30;
 	// let upperCaseName not required
@@ -33,3 +34,4 @@
 <!-- <button on:click={changeName}>Change Name</button> -->
  <!-- <input value="{name}" on:input="{nameInput}"> to achive this 2 way binding we can use -->
  <input type="text" bind:value={name}>
+ <ContactCard/>
