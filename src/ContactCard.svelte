@@ -2,6 +2,7 @@
     export let userName; 
     export let jobTitle;
     export let description;
+    export let imageUrl;
 </script>
 <style>
     .contact-card {
@@ -59,7 +60,7 @@
   <div class="contact-card">
     <header>
       <div class="thumb">
-        <img src="" alt="" />
+        <img src="{imageUrl}" alt="{userName}" />
       </div>
       <div class="user-data">
         <h1>{userName}</h1>
